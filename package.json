@@ -4,7 +4,9 @@
   "description": "grocery store",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon backend/server"
+    "start": "nodemon backend/server",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "author": "Sunil khadka",
   "license": "ISC",
