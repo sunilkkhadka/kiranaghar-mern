@@ -5,7 +5,6 @@ export const fetchAllProducts = createAsyncThunk(
   async () => {
     let response = await fetch("/api/products");
     let data = await response.json();
-    console.log(data);
     return data;
   }
 );
@@ -15,21 +14,19 @@ const productSlice = createSlice({
   initialState: {
     productItems: [],
     isLoading: false,
-    extraReducers: {
-      [fetchAllProducts.fulfilled]: (state, action) => {
-        state.productItems = action.payload;
-        state.isLoading = false;
-      },
-      [fetchAllProducts.pending]: (state) => {
-        state.isLoading = true;
-      },
-      [fetchAllProducts.rejected]: (state) => {
-        state.isLoading = false;
-      },
+  },
+  extraReducers: {
+    [fetchAllProducts.pending]: (state) => {
+      state.isLoading = true;
+    },
+    [fetchAllProducts.fulfilled]: (state, action) => {
+      state.productItems = action.payload;
+      state.isLoading = false;
+    },
+    [fetchAllProducts.rejected]: (state) => {
+      state.isLoading = false;
     },
   },
 });
-
-console.log(productSlice);
 
 export default productSlice.reducer;
