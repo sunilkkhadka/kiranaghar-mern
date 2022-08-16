@@ -1,7 +1,9 @@
 const express = require("express");
+const connectDb = require("./config/db");
 const products = require("./data/products");
 
-const PORT = 5000;
+connectDb();
+
 const app = express();
 
 //Creating routes
@@ -23,4 +25,4 @@ app.get("/api/products/:id", (req, res) => {
   res.json(product);
 });
 
-app.listen(PORT, console.log(`Listening on port ${PORT}`));
+app.listen(5000, console.log(`Listening on port ${5000}`));
