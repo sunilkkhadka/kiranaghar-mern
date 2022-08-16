@@ -1,0 +1,18 @@
+@import "./fonts";
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $nunito-regular;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}

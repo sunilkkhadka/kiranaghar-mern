@@ -1,0 +1,17 @@
+{
+  "name": "kiranaghar",
+  "version": "1.0.0",
+  "description": "grocery store",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon backend/server"
+  },
+  "author": "Sunil khadka",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
