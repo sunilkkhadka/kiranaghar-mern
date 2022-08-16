@@ -9,6 +9,7 @@ import Header from "../../components/Header/Header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import Slider from "../../components/Slider/Slider.jsx";
 import Category from "../../components/category/Category.jsx";
+import ProductDisplay from "../../components/productDisplay/ProductDisplay.jsx";
 
 // Importing slice async functions
 import { fetchAllProducts } from "../../features/productSlice.jsx";
@@ -28,6 +29,7 @@ const HomePage = () => {
       <Header />
       <Category />
       <Slider />
+      <ProductDisplay />
       <Footer />
     </section>
   );
