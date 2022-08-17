@@ -21,12 +21,7 @@ const CartPage = () => {
     getCartItems(pid, quantity);
   }, [dispatch, pid, quantity]);
 
-  return (
-    <section className="cart-page">
-      <Header />
-      <Footer />
-    </section>
-  );
+  return <section className="cart-page"></section>;
 };
 
 export default CartPage;

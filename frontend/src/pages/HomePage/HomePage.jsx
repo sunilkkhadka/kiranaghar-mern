@@ -23,11 +23,9 @@ const HomePage = () => {
 
   return (
     <section className="homepage">
-      <Header />
       <Category />
       <Slider />
       <ProductDisplay />
-      <Footer />
     </section>
   );
 };

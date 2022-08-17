@@ -23,7 +23,6 @@ const ProductPage = () => {
 
   return (
     <section className="product-page">
-      <Header />
       <div className="product-page__breadcrumb">
         <div className="container">
           <p>
@@ -38,7 +37,6 @@ const ProductPage = () => {
         <p className="container">You may also like: </p>
         <ProductDisplay />
       </div>
-      <Footer />
     </section>
   );
 };
