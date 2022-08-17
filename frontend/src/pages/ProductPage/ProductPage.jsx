@@ -24,7 +24,7 @@ const ProductPage = () => {
   return (
     <section className="product-page">
       <Header />
-      <div className="product-page__breadcrumb container">
+      <div className="product-page__breadcrumb">
         <div className="container">
           <p>
             Home &nbsp; &gt; &nbsp; Products &nbsp; &gt; &nbsp;
