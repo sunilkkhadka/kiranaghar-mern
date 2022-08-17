@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "./productInfo.scss";
 
 const ProductInfo = ({ product }) => {
-  const [qty, setQty] = useState(0);
+  const [qty, setQty] = useState(1);
 
   return (
     <section className="product-info">
