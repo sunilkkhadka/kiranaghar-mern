@@ -55,7 +55,10 @@ const ProductInfo = ({ product }) => {
               </div>
             </div>
             <div className="product-info__actions">
-              <Link to="/" className="product-info__add-to-cart">
+              <Link
+                to={`/cart/${product._id}?qty=${qty}`}
+                className="product-info__add-to-cart"
+              >
                 Add to Cart
               </Link>
             </div>

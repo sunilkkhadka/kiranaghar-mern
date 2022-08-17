@@ -21,7 +21,9 @@ const ProductCard = ({ productItem }) => {
         <span>Rs.</span>
         {productItem.price}
       </p>
-      <button className="product-card__cart-btn">Add to cart</button>
+      <Link to={`/cart/${productItem._id}`} className="product-card__cart-btn">
+        Add to cart
+      </Link>
     </section>
   );
 };
