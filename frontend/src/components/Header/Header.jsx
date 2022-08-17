@@ -17,8 +17,12 @@ const Header = () => {
             <input type="text" placeholder="Search..." />
           </div>
           <ul className="header__links">
-            <li>Cart</li>
-            <li>Login</li>
+            <Link to="/" className="header__link">
+              Cart
+            </Link>
+            <Link to="/" className="header__link">
+              Login
+            </Link>
           </ul>
         </nav>
       </div>

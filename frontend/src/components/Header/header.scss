@@ -1,8 +1,24 @@
 @import "../../scss/variables";
 
 .header {
-  background-color: $primary-color;
+  background-color: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   color: #fff;
+  display: flex;
+  align-items: center;
+  height: 75px;
+  position: sticky;
+  top: 0;
+
+  input[type="text"] {
+    border: 0;
+    padding: 1rem 1rem;
+    width: 40rem;
+    border-radius: 0.5rem;
+    background-color: rgb(240, 240, 240);
+    outline: none;
+    font-size: 1rem;
+  }
 
   &__navigation {
     display: flex;
@@ -10,11 +26,30 @@
     align-items: center;
   }
 
+  &__logo {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $primary-color;
+  }
+
   &__links {
     display: flex;
+    font-size: 1rem;
+    color: #333;
+  }
 
-    li {
-      padding: 1rem;
+  &__link {
+    color: $primary-color;
+    font-size: 1.2rem;
+    padding: 1rem 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    border-radius: 0.2rem;
+
+    &:hover {
+      background-color: $primary-color;
+      color: #fff;
     }
   }
 }
