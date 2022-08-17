@@ -1,0 +1,14 @@
+.product-desc {
+  padding: 1rem 2rem;
+  border: 1px solid rgb(226, 226, 226);
+
+  &__title {
+    font-size: 2rem;
+    text-decoration: underline;
+    padding-bottom: 2rem;
+  }
+
+  &__content {
+    padding-bottom: 2rem;
+  }
+}
