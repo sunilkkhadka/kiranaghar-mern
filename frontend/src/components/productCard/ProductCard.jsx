@@ -6,7 +6,7 @@ import "./productCard.scss";
 const ProductCard = ({ productItem }) => {
   return (
     <section className="product-card">
-      <Link to="/" className="product-card__image">
+      <Link to={`/product/${productItem._id}`} className="product-card__image">
         <img
           src="https://sm.ign.com/ign_in/screenshot/default/chainsaw-man_fkbm.jpg"
           alt={productItem.title}
